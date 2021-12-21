@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="put imp words from your webpage">
+        <meta name="author" content="put the author name">
+        <meta name = "description" content="put short description">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+        <style>
+            *{
+                margin: 0px;
+            }
+            .head-section{
+                background-color: yellowgreen;
+                height: 8vh;
+                padding: 20px;
+            }
+            h1{
+                text-align: center;
+            }
+            .section-background{
+                background-image: url("https://c4.wallpaperflare.com/wallpaper/174/502/417/pen-business-contract-entrepreneur-wallpaper-preview.jpg");
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+            .form-section{
+                padding: 10px;
+            }
+            .imp_field{
+                color: red;
+            }
+            [type="text"]{
+                height: 30px;
+                width: 200px;
+                box-shadow: 0px -2px 5px black;
+            }
+            [type="date"]{
+                height: 30px;
+                width: 200px;
+                box-shadow: 0px -2px 5px black;
+            }
+            [type="number"]{
+                height: 30px;
+                width: 80px;
+                box-shadow: 0px -2px 5px black;
+            }
+
+            select{
+                height: 30px;
+                width: 200px;
+                box-shadow: 0px -2px 5px black;
+            }
+            td{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div>
+                    <div class="header_logo" onclick="movetohome()">
+                        <img src="/Users/yashwanthmudili/Desktop/neosoft/webtechnologies_assignments/college_website/media_files/logo.png" width="40px" height="40px"/>
+                        <p class="header_main_title">MR</p>
+                    </div>
+                    <p style="font-size: 12px;">(college of engineering)</p>
+                </div>
+                <div>
+                    <ul>
+                        <li class="active"><a href="#">About MR</a>
+                            <div class="sub-menu">
+                                <ul >
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Promoters</a></li>
+                                    <li><a href="#">Vision</a></li>
+                                    <li><a href="#">Administration</a></li>
+                                    <li><a href="#">Directors</a></li>
+                                    <li><a href="#">Quality Policy</a></li>
+                                    <li><a href="#">Imp Contact Numbers</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Why MR</a>
+                            <div class="sub-menu">
+                                <ul >
+                                    <li><a href="#">Accreditations</a></li>
+                                    <li><a href="#">Awards</a></li>
+                                    <li><a href="#">Best Practices</a></li>
+                                    <li><a href="#">Institutional Distinctiveness</a></li>
+                                    <li><a href="#">Future Plans</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Academics</a>
+                            <div class="sub-menu">
+                                <ul >
+                                    <li><a href="#">Departments</a></li>
+                                    <li><a href="#">Programs Offered</a></li>
+                                    <li><a href="#">Departments</a></li>
+                                    <li><a href="#">Admission Procedure</a></li>
+                                    <li><a href="#">Fee Details</a></li>
+                                    <li><a href="#">Rules and Regulations</a></li>
+                                    <li><a href="#">Academic Calendar</a></li>
+                                    <li><a href="#">Academic Awards</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Examinations</a>
+                            <div class="sub-menu">
+                                <ul >
+                                    <li><a href="#">Regulations</a></li>
+                                    <li><a href="#">Examination Rules</a></li>
+                                    <li><a href="#">Circulars</a></li>
+                                    <li><a href="#">Fee Notifications</a></li>
+                                    <li><a href="#">Results</a></li>
+                                    <li><a href="#">Time Table</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Placements</a>
+                            <div class="sub-menu">
+                                <ul >
+                                    <li><a href="#">Goals and Objectives</a></li>
+                                    <li><a href="#">MOUs</a></li>
+                                    <li><a href="#">Training Programs</a></li>
+                                    <li><a href="#">Esteemed Recruiters</a></li>
+                                    <li><a href="#">Goals and Objectives</a></li>
+                                    <li><a href="#">Placement Statistics</a></li>
+                                    <li><a href="#">Assessment Partners</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">R&D</a>
+                            <div class="sub-menu">
+                                <ul >
+                                    <li><a href="#">In House R&D Projects</a></li>
+                                    <li><a href="#">Funded Research Projects</a></li>
+                                    <li><a href="#">Funded Schemes</a></li>
+                                    <li><a href="#">Publications</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Facilities</a>
+                            <div class="sub-menu">
+                                <ul >
+                                    <li><a href="#">Central Library</a></li>
+                                    <li><a href="#">Infrastructure</a></li>
+                                    <li><a href="#">Amenities Block</a></li>
+                                    <li><a href="#">Physical Education</a></li>
+                                    <li><a href="#">Transportation</a></li>
+                                    <li><a href="#">Central Library</a></li>
+                                    <li><a href="#">Hostels</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Alumni</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header_title">
+                <div>
+                    <img src="https://www.nicepng.com/png/full/271-2711757_kalam-centre-for-innovation-and-abdul-kalam-death.png" height="150px">
+                </div>
+                
+                <div class="quote">
+                    <ul class="quote_msgs">
+                        <li class="active">Winners are not those who never fail but those who never quit</li>
+                        <li>Dream, dream, dream. Dreams transform into thoughts and thoughts result in action</li>
+                        <li>Failure will never overtake me if my determination to succeed is strong enough</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="scroll_bar">
+                <marquee>
+                    <ul class="scroll_text"> 
+                        <li><span>&#8594;</span>    CATEGORY-B SPOT APPLICATION FORM 2021-22</li>
+                        <li><span>&#8594;</span>    Placements for the Class of 2022 – 824*  (as on 2nd December 2021)  (CIVIL-4, EEE-49, ME-38, ECE-274, CSE-360, IT-99).</li>
+                        <li><span>&#8594;</span>    Placements for the Class of 2021 – 971* (as on 30th October 2021) (CIVIL-46, EEE-83, ME-160, ECE-265, CSE-302, IT-91, MBA-24).</li>
+                        <li><span>&#8594;</span>    IMPORTANT Notice: All Education Verification requests should be sent to exambranch@mrcollege.ac.in</li>
+                    </ul>
+                </marquee>
+            </div> -->
+        </header>
+        <section class="head-section">
+            <h1>Engineering Admission Form</h1>
+            <marquee>Contact.No: 989012321, Vijayawada, AndhraPradesh</marquee>
+        </section>
+        <!-- <section class="section-background"> -->
+        <section class="form-section">
+            <form action="success.html">
+                <table>
+                    <tr>
+                        <td><strong>College Details</strong></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pvcolname">Jr.College Name: </label></td>
+                        <td><input type="text" id="pvcolname" name="pvcolname" required><span class="imp_field"> *</span></td>
+
+                        <td><label for="passyear">Passing Year: </label></td>
+                        <td>
+                            <select id="passyear" name="passyear">
+                                <option value="2021-2022" selected>2021-2022</option>
+                                <option value="2020-2021">2020-2021</option>
+                                <option value="2019-2020">2019-2020</option>
+                                <option value="2018-2019">2018-2019</option>
+                                <option value="before 2018">before 2018</option>
+                            </select>
+                            <span class="imp_field"> *</span>
+                        </td>
+
+                        <td><label for="jrcrs">Course: </label></td>
+                        <td>
+                            <select id="jrcrs" name="jrcrs">
+                                <option value="MPC" selected>MPC</option>
+                                <option value="MEC">MEC</option>
+                                <option value="MBIPC">MBIPC</option>
+                                <option value="CEC">CEC</option>
+                                <option value="other">other</option>
+                            </select>
+                            <span class="imp_field"> *</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="clgjd">Date of joined:</label>
+                        </td>
+                        <td>
+                            <input type="date" id="clgjd" required><span class="imp_field"> *</span>
+                        </td>
+
+                        <td>
+                            <label>Board of study: </label>
+                        </td>
+                        <td>
+                            <input type="text" required><span class="imp_field"> *</span>
+                        </td>
+
+                        <td><label>NRI: </label></td>
+                        <td style="padding: 10px;"> 
+                            <input id="confirm_1" type="radio" name="nri" checked>
+                            <label for="confirm_1" value="no">No</label>
+                            <br>
+                            <input id="confirm_2" type="radio" name="nri">
+                            <label for="confirm_2" value="yes">Yes</label>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><strong>Student Details</strong></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fname">First Name: </label></td>
+                        <td><input type="text" id="fname" required><span class="imp_field"> *</span></td>
+
+                        <td><label for="mname">Middle Name: </label></td>
+                        <td><input type="text" id="mname"></td>
+
+                        <td><label for="lname">Last Name: </label></td>
+                        <td><input type="text" id="lname" required><span class="imp_field"> *</span></td>
+                    </tr>
+                    <tr>
+                        <td><p>You'r calling name: </p></td>
+                        <td><i>code not written yet</i></td>
+                    </tr>
+                    <tr>
+                        <td><label for="perage">Age: </label></td>
+                        <td><input type="number" id="perage" min="15" max="60" required><span class="imp_field"> *</span></td>
+
+                        <td><label>Gender: </label></td>
+                        <td style="padding: 10px;"> 
+                            <input id="gender_1" type="radio" name="gender" checked>
+                            <label for="gender_1" value="male">Male</label>
+                            <br>
+                            <input id="gender_2" type="radio" name="gender">
+                            <label for="gender_2" value="yes">Female</label>
+                            <span class="imp_field"> *</span>
+                        </td>
+
+
+
+
+                    </tr>
+                    <tr>
+                        <td><label for="faname">Father's Name: </label></td>
+                        <td><input type="text" id="faname" required><span class="imp_field"> *</span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="maname">Mother's Name: </label></td>
+                        <td><input type="text" id="maname" required><span class="imp_field"> *</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="papnum">Parent/Guardian Ph.No: </label></td>
+                        <td><input type="text" id="papnum" minlength="10" maxlength="10" id="papnum" name="papnum" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required><span class="imp_field"> *</span></td>
+                        <td><label for="yunum">Student Ph.No: </label></td>
+                        <td><input type="text" id="yunum" minlength="10" maxlength="10" id="yunum" name="yunum" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required><span class="imp_field"> *</span></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Permanent Address: </label></td>
+                        <td colspan="3"><textarea rows="5" cols="50" required></textarea>
+                            <span class="imp_field"> *</span>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Academic Details</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><p>upload the softcopy details.Each file should not exceed 2mb.</p></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label>10th Marksheet: </label><span class="imp_field"> *</span></td>
+                        <td><input type="file" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Inter Marksheet: </label><span class="imp_field"> *</span></td>
+                        <td><input type="file" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Eng.Clg Rank Sheet: </label><span class="imp_field"> *</span></td>
+                        <td><input type="file" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Passport Photo: </label><span class="imp_field"> *</span></td>
+                        <td><input type="file" required></td>
+                    </tr>
+
+
+                    <tr>
+                        <td><strong>Choose your Branch</strong></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="branchsel">Branch: </label></td>
+                        <td>
+                            <select id="branchsel" name="branchsel">
+                                <option value="CIVIL ENGINEERING" selected>CIVIL ENGINEERING</option>
+                                <option value="COMPUTER SCIENCE AND ENGINEERING">COMPUTER SCIENCE AND ENGINEERING</option>
+                                <option value="ELECTRONICS AND COMMUNICATION ENGINEERING">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+                                <option value="ELECTRICAL AND ELECTRONICS ENGINEERING">ELECTRICAL AND ELECTRONICS ENGINEERING</option>
+                                <option value="INFORMATION TECHNOLOGY">INFORMATION TECHNOLOGY</option>
+                                <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+                                <option value="AERONAUTICAL ENGINEERING">AERONAUTICAL ENGINEERING</option>
+                                <option value="AEROSPACE ENGINEERING">AEROSPACE ENGINEERING</option>
+                                <option value="CHEMICAL ENGINEERING">CHEMICAL ENGINEERING</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="imp_field"> *</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="jdate">Date of joining: </label></td>
+                        <td><input type="date" id="jdate" required> <span class="imp_field"> *</span></td>
+                    </tr>
+
+
+
+                    <tr>
+                        
+                        <td></td>
+                        <td><small>Keep <b>N.A.</b> If options are inappropriate.</small></td>
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><small><b>NRI: </b>Non-resident Indian</small></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <!-- </div> -->
+        <footer class="foot-background">
+            <div class="foot-background_s1">
+                <div class="foot-section1">
+                    <h1>Testimonials</h1>
+                    <p class="testimonial_msg"> 
+                        One of the best infrastructured college in AP. 
+                        Students has a huge platform to reach their goals 
+                        by well qualified lecturers.<br><span>kunamneni raghu pradeep( EEE )
+                        </span>
+                    </p>
+                    <p class="testimonial_msg">
+                        Very good college with infrastructure , experienced faculty. 
+                        College library is top among the libraries of andhrapradesh. 
+                        Amenities(canteen, internal auditorium, play ground) for students 
+                        are awesome.<br><span>Dheeraj korukonda( CSE )
+                        </span>
+                    </p>
+                    <p class="testimonial_msg">
+                        Nice college with good infrastructure and placements. Can found lot
+                        of opportunities to publish our projects and can get good recognition.
+                        Well experienced faculty. 
+                        <br><span>Venkat Yashwanth( ME )
+                        </span>
+                    </p>
+                </div>
+                <div class="foot-section2">
+                    <h1>Quick Links</h1>
+                    <div style="display: flex;">
+                        <div>
+                            <ul class="footer_list">
+                                <li>Mcap</li>
+                                <li>College Administration</li>
+                                <li>Imp Phone Numbers</li>
+                                <li>Departments</li>
+                                <li>Academic Calendars</li>
+                                <li>Fee Details</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="footer_list2">
+                                <li>About Alumni</li>
+                                <li>MR Results</li>
+                                <li>College News Letter</li>
+                                <li>ARIIA Reports</li>
+                                <li>RTI Cell</li>
+                                <li>Central Library</li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="foot-section3">
+                    <a href="contactUs.html" style="text-decoration: none;">
+                        <h1>Contact Us</h1>
+                    </a>
+                    <div style="display: flex;">
+                        <i class="fas fa-map-marker-alt" style="margin-top: 12px;"></i>
+                        <p style="margin-left: 10px;">
+                            MR Engineering College, 
+                            Seshadri Rao Knowledge Village, 
+                            Gudlavalleru, Krishna(dt), 
+                            Andhra Pradesh 521356.
+                        </p>
+                    </div>
+                    <div style="display: flex;">
+                        <i class="fas fa-mobile-alt" style="margin-top: 12px;"></i>
+                        <p style="margin-left: 10px;">
+                            08674-273737 / 273888, +91 9848779121
+                        </p>
+                    </div>
+                    <div style="display: flex;">
+                        <i class="fas fa-phone" style="margin-top: 12px;"></i>
+                        <p style="margin-left: 10px;">
+                            08674-273957
+                        </p>
+                    </div>
+                    <div style="display: flex;">
+                        <i class="far fa-envelope" style="margin-top: 12px;"></i>
+                        <p style="margin-left: 10px;">
+                            principal@gecgudlavalleru.ac.in
+                        </p>
+                    </div>
+    
+                </div>
+            </div>
+            <div style="height: 1px;width:100%;background-color: white;">
+                
+            </div>
+            <div class="footer_contacts">
+                <div style="display: flex;justify-content: space-around;width: 200px;">
+                    <div class="font-cover">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="font-cover">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="font-cover">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="font-cover">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="font-cover">
+                        <i class="fab fa-instagram"></i>
+                    </div> 
+                </div>
+                <div>
+                    <p>Last updated on 21-December</p>
+                </div>
+                <div>
+                    <p>2021 Placed Students:  <span>8000+</span> </p>
+                </div>
+            </div>
+            <div class="footer-end">
+                <i class="far fa-copyright"></i>
+                <p>2021 MR Engineering College | An Autonomous Insititue.All rights not reserved | <span>Learning Project</span></p>
+            </div>
+            
+            
+        </footer>
+        
+        <!----------------------------- xxxxxx ----------------------------->
+        <script type="text/javascript">
+            function movetohome(){
+                location.replace("index.html");
+            }
+        </script>
+    </body>
+</html>
